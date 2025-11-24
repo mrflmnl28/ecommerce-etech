@@ -1,6 +1,8 @@
 E-TECH STORE - SYSTEM DOCUMENTATION & GUIDE
+
 1. HOW TO RUN THE SYSTEM
 PREREQUISITES:
+
 Node.js installed (v14 or higher)
 
 MongoDB installed locally OR a MongoDB Atlas connection string
