@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 // Based on your file list, ensure these 4 images exist in 'src/assets/'
 import imgAaron from '../assets/AaronFaustino.jpg';
 import imgAngelo from '../assets/AngeloDavid.jpg';
-import imgMarfil from '../assets/Marfil.jpg';
+import imgMarfil from '../assets/marfil.jpg';
 import imgKenneth from '../assets/KennethAllen.jpg';
 
 const Help = () => {

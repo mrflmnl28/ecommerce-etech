@@ -75,16 +75,16 @@ mongoose.connect(process.env.MONGO_URI)
 
     // 5. Create Products
     const products = await Product.insertMany([
-      { name: 'MacBook Pro 16"', description: 'Powerful laptop for professionals', brand: 'Apple', image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=300', price: 2499, stock: 15, category: categories[0]._id },
-      { name: 'Dell XPS 13', description: 'Ultra-portable and powerful', brand: 'Dell', image: 'https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=300', price: 1299, stock: 20, category: categories[0]._id },
-      { name: 'NVIDIA RTX 4090', description: 'Top-tier graphics card', brand: 'NVIDIA', image: 'https://images.unsplash.com/photo-1631211588214-c1e3c3f4b5db?w=300', price: 1599, stock: 8, category: categories[1]._id },
-      { name: 'Intel Core i9-13900K', description: 'Latest flagship processor', brand: 'Intel', image: 'https://images.unsplash.com/photo-1555618224-cff0c1edbf5f?w=300', price: 689, stock: 12, category: categories[2]._id },
-      { name: 'Kingston Fury RGB 32GB', description: '32GB DDR5 RAM', brand: 'Kingston', image: 'https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?w=300', price: 149, stock: 50, category: categories[3]._id },
-      { name: 'Samsung 970 EVO Plus', description: '1TB NVMe SSD', brand: 'Samsung', image: 'https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?w=300', price: 129, stock: 45, category: categories[3]._id },
-      { name: 'ASUS ROG Zephyrus G14', description: 'Gaming laptop with RTX 4060', brand: 'ASUS', image: 'https://images.unsplash.com/photo-1588874657197-cfe66ee9c379?w=300', price: 1599, stock: 10, category: categories[0]._id },
-      { name: 'AMD Ryzen 9 7950X3D', description: 'High-performance CPU', brand: 'AMD', image: 'https://images.unsplash.com/photo-1555618224-cff0c1edbf5f?w=300', price: 699, stock: 14, category: categories[2]._id },
-      { name: 'NVIDIA RTX 4080', description: 'High-end graphics card', brand: 'NVIDIA', image: 'https://images.unsplash.com/photo-1631211588214-c1e3c3f4b5db?w=300', price: 1199, stock: 16, category: categories[1]._id },
-      { name: 'Corsair MP600 Core XT', description: '2TB SSD with high speed', brand: 'Corsair', image: 'https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?w=300', price: 199, stock: 35, category: categories[3]._id }
+      { name: 'MacBook Pro 16"', description: 'Powerful laptop for professionals', brand: 'Apple', image: 'https://powermaccenter.com/cdn/shop/files/MacBook_Pro_16_in_Silver_PDP_Image_Position-1__en-US_8f6d4c2b-b532-4a97-b70e-df8fce1a7b68.jpg?v=1689794529&width=1445', price: 2499, stock: 15, category: categories[0]._id },
+      { name: 'Dell XPS 13', description: 'Ultra-portable and powerful', brand: 'Dell', image: 'https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/9345/spi/platinum/touch-oled/notebook-xps-13-9345-oled-silver-campaign-hero-504x350-ng.psd?fmt=jpg&wid=570&hei=400', price: 1299, stock: 20, category: categories[0]._id },
+      { name: 'NVIDIA RTX 4090', description: 'Top-tier graphics card', brand: 'NVIDIA', image: 'https://bermorzone.com.ph/wp-content/uploads/2022/09/GeForce-RTX%C2%AE-4090-GAMING-X-TRIO-24G.jpg', price: 1599, stock: 8, category: categories[1]._id },
+      { name: 'Intel Core i9-13900K', description: 'Latest flagship processor', brand: 'Intel', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQesyH6QLUnsoD-ktLuMzlyyUdsMQO8UUWpmg&s', price: 689, stock: 12, category: categories[2]._id },
+      { name: 'Kingston Fury RGB 32GB', description: '32GB DDR5 RAM', brand: 'Kingston', image: 'https://media.kingston.com/kingston/product/FURY_Beast_RGB_Black_DDR4_1-sm.jpg', price: 149, stock: 50, category: categories[3]._id },
+      { name: 'Samsung 970 EVO Plus', description: '1TB NVMe SSD', brand: 'Samsung', image: 'https://easypc.com.ph/cdn/shop/products/Samsung_970_Evo_Plus_M.2_NVME-a_2048x.jpg?v=1699500088', price: 129, stock: 45, category: categories[3]._id },
+      { name: 'ASUS ROG Zephyrus G14', description: 'Gaming laptop with RTX 4060', brand: 'ASUS', image: 'https://bsmedia.business-standard.com/_media/bs/img/article/2024-06/20/full/1718865557-5971.jpg?im=FeatureCrop,size=(826,465)', price: 1599, stock: 10, category: categories[0]._id },
+      { name: 'AMD Ryzen 9 7950X3D', description: 'High-performance CPU', brand: 'AMD', image: 'https://ecommerce.datablitz.com.ph/cdn/shop/files/ryzen9.2_1024x.jpg?v=1760517851', price: 699, stock: 14, category: categories[2]._id },
+      { name: 'NVIDIA RTX 4080', description: 'High-end graphics card', brand: 'NVIDIA', image: 'https://shop.villman.com/cdn/shop/files/download_4_1b160f23-ac03-44c9-9570-2e8b0a073600_800x.png?v=1714189008', price: 1199, stock: 16, category: categories[1]._id },
+      { name: 'Corsair MP600 Core XT', description: '2TB SSD with high speed', brand: 'Corsair', image: 'https://www.theoverclocker.com/wp-content/uploads/2023/07/MP-Core-600-XT-1024x757.jpg', price: 199, stock: 35, category: categories[3]._id }
     ]);
 
     // 6. Create Reviews
