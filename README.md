@@ -15,7 +15,7 @@ Navigate to the backend folder: cd src/backend
 Install required packages: npm install
 
 Create a ".env" file in "src/backend/" with the following content:
-MONGO_URI=mongodb+srv:/00000000000000000000000000000000000000000000000000/Electronics?retryWrites=true&w=majority&appName=Cluster0
+MONGO_URI=mongodb+srv://00000000000000000000000000000000000000000000000000/Electronics?retryWrites=true&w=majority&appName=Cluster0
 PORT=5000
 JWT_SECRET=4d7f9b1dcb1a8e621f3f0ce9f95a8e4b7eac9021b5d9a9e9123f5f6b18d3c4f9
 
